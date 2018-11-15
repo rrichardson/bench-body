@@ -1,0 +1,19 @@
+[package]
+name = "bench-body"
+version = "0.1.0"
+authors = ["Rick Richardson <rick.richardson@gmail.com>"]
+
+[dependencies]
+futures = "0.1.25"
+tokio = "0.1.11"
+hyper = { path = "../hyper" }
+bench = "1.0.0"
+bencher = "0.1.5"
+bytes = "0.4.10"
+lazy_static = "1.2.0"
+tokio-executor = "0.1.5"
+tokio-reactor = "0.1.6"
+
+[[bench]]
+name = "bench"
+harness = false
